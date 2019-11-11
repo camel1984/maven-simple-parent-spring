@@ -1,0 +1,7 @@
+.idea/
+simple-command/target/
+simple-model/target/
+simple-persist/target/
+simple-weather/target/
+simple-webapp/data/
+simple-webapp/target/
