@@ -24,9 +24,9 @@ public class WeatherController implements Controller {
 			HttpServletResponse response) throws Exception {
 		log.error("##################entering WeatherController.");
 
-//		String zip = request.getParameter("zip");
-		String zip = "bellevue,wa";
-		Weather weather = weatherService.retrieveForecast(zip);
+		String name = request.getParameter("name");
+//		String name = "bellevue,wa";
+		Weather weather = weatherService.retrieveForecast(name);
 		log.error("################get result: {}, {}", weather.getLocation().getCity(), weather.getAtmosphere().getHumidity());
 		weatherDAO.save(weather);
 		return new ModelAndView("weather", "weather", weather);

@@ -10,6 +10,8 @@
    * ../../bin/startup.sh
    * we copy data dir into webapps/simple-webapp, then start the tomcat from this very directory so the data directory is in the root directory of the current directory of the tomcat process.
    * Then access this url: http://127.0.0.1:8080/simple-webapp/weather.x
+   * For this version, access this: http://127.0.0.1:8080/simple-webapp/weather.x?name=bellevue,wa
+   * http://127.0.0.1:8080/simple-webapp/history.x?woeid=2362031
 # Import existing source into git hub
 1. In root directory: git init
 1. In root directory: git remote add origin https://github.com/camel1984/maven-simple-parent-spring.git
