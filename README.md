@@ -1,4 +1,4 @@
-# Set up this project
+# Set up simple-webapp
 1. In root directory, execute mvn clean
 1. In root directory, execute mvn install
 1. In ./simple-webapp subdirectory, execute: mvn hibernate3:hbm2ddl, if there is any issues, use mvn hibernate3:hbm2ddl -X to debug.
@@ -12,6 +12,16 @@
    * Then access this url: http://127.0.0.1:8080/simple-webapp/weather.x
    * For this version, access this: http://127.0.0.1:8080/simple-webapp/weather.x?name=bellevue,wa
    * http://127.0.0.1:8080/simple-webapp/history.x?woeid=2362031
+   
+   
+# Set up simple-command
+1. In root directory, execute mvn clean
+1. In root directory, execute mvn install
+1. In simple-command subdirectory, execute mvn assembly:assembly
+1. In simple-command subdirectory, execute mvn hibernate3:hbm2ddl
+1. In simple-command subdirectory, execute java -cp target/simple-command-1.0-jar-with-dependencies.jar org.sonatype.mavenbook.ch07.Main bellevue,wa 2362031 history
+1. In simple-command subdirectory, execute java -cp target/simple-command-1.0-jar-with-dependencies.jar org.sonatype.mavenbook.ch07.Main bellevue,wa 2362031 weather
+
 # Import existing source into git hub
 1. In root directory: git init
 1. In root directory: git remote add origin https://github.com/camel1984/maven-simple-parent-spring.git
@@ -19,6 +29,12 @@
 1. In root directory: git push -u origin master
 # Import remote repository into local work space
 1. Clone local working directory: git clone https://github.com/camel1984/maven-simple-parent-spring.git
+
+# Useful maven command
+1. mvn site: generate document website.
+1. mvn exec:java -Dexec.mainClass=org.sonatype.mavenbook.weather.Main -Dexec.args="70112": use exec plug in to execute java code.
+1. mvn help:describe -Dplugin=compiler: using help plugin to describe plugins.
+1. mvn help:describe -Dplugin=compiler -Ddetail=true: describe a plugin with details.
 
 
 

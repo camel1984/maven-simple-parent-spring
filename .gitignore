@@ -1,5 +1,7 @@
 .idea/
+*/velocity.log
 simple-command/target/
+simple-command/data/
 simple-model/target/
 simple-persist/target/
 simple-weather/target/
