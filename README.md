@@ -35,6 +35,7 @@
 1. mvn exec:java -Dexec.mainClass=org.sonatype.mavenbook.weather.Main -Dexec.args="70112": use exec plug in to execute java code.
 1. mvn help:describe -Dplugin=compiler: using help plugin to describe plugins.
 1. mvn help:describe -Dplugin=compiler -Ddetail=true: describe a plugin with details.
+1. mvn dependency:analyze
 
 
 
