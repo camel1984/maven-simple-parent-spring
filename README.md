@@ -36,6 +36,7 @@
 1. mvn help:describe -Dplugin=compiler: using help plugin to describe plugins.
 1. mvn help:describe -Dplugin=compiler -Ddetail=true: describe a plugin with details.
 1. mvn dependency:analyze
+1. mvn help:effective-pom
 
 
 
