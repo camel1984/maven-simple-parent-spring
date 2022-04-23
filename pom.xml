@@ -25,7 +25,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <springVersion>3.2.3.RELEASE</springVersion>
+    <springVersion>5.3.19</springVersion>
     <hibernateAnnotationVersion>3.3.0.ga</hibernateAnnotationVersion>
     <hsqldbVersion>1.8.0.7</hsqldbVersion>
     <tomcatVersion>9.0.24</tomcatVersion>
